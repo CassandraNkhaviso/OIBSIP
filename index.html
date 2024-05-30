@@ -12,16 +12,22 @@
     #poster {
       width: 400px;
       margin: 20px auto;
-      background-color: white;
+      background-color: #11dae9;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
-    h1 {
+    h1,h2 {
       font-size: 20px;
-      color: #333;
+      color: gray;
       margin-bottom: 10px;
+    }
+    h2:hover{
+      cursor: pointer;
+      transition: all 2s linear;
+      color: whitesmoke;
+
     }
 
     p {
@@ -48,11 +54,11 @@
     li{
         list-style: none;
     }
-    li,image{
-        align-items: flex;
+    .li,.image{
+        display: inline-block;
     }
     .booking,.location{
-        color: lightcoral;
+        color: #d41093;
         font-family:Arial, Helvetica, sans-serif
 
     }
@@ -60,10 +66,20 @@
 </head>
 <body>
   <div id="poster">
-    <h1>Welcome to our Spa!</h1>
+    <h1>Welcome to Cee's Spa!😌</h1>
+    <h2>Operating times</h2>
+    <ul>
+      <li> Monday- Thursday: 09h30-17h30<li>
+          <li>Friday: 10h00-14h00</li>
+          <li>Saturday: 10h00-15h30</li>
+           <li>Sunday: Closed</li>
+           
+      </li>
+    </ul>
     <p class="service">Services Offered:</p>
     <ul>
       <li>Massage Therapy</li>
+      <img class="image" src="https://images.pexels.com/photos/6560266/pexels-photo-6560266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Massage">
       <li>Facials</li>
       <img class="image" src="https://images.pexels.com/photos/7582558/pexels-photo-7582558.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="facials">
       <li>Manicure and Pedicure</li>
@@ -73,6 +89,11 @@
     </ul>
     <p class="location">Location: 16 Funnel Street, Cape Town, WC</p>
     <p class="booking">To book an appointment, call us at: 021-2738-3839</p>
+  </div>
+  <h3>Testimonials:</h3>
+  <div class="testimonials">
+    <p>"I had the most relaxing experience at this spa. The staff was friendly and professional, and the atmosphere was serene. I will definitely be coming back!"</p>
+    <p>-Jacky Jones</p>
   </div>
 </body>
 </html>
